@@ -1,0 +1,317 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  color: black;
+  text-align: center;
+  margin: auto 20px;
+  padding: 20px 20px;
+  background: #FFFFFF 0% 0% no-repeat padding-box;  
+  border-top: 1px solid #d8d8d89d;
+  border-left: 1px solid #d8d8d89d;
+  opacity: 0.6;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 2px 2px 4px #9f9f9f;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: rgb(33, 3, 109);
+  text-align: center;
+  padding: 0px 40px;
+}
+
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 00;
+  font-size: 20px;
+  color: rgb(33, 3, 109);
+  text-align: center;
+  padding: 0px 40px;
+  margin-bottom: 0px;
+}
+
+ul {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px 20px 10px 0px;
+  text-align: center;
+  list-style: none;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0px 20px 10px 20px;
+  text-align: center;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+    "logobar"
+    "header"
+    "tekst1"
+    "quote1"
+    "tekst2"
+    "quote2"
+    "tekst4"
+    "film1"
+    "film2"
+    "film3"
+    "tekst3"
+    "contact"
+    "footer";
+}
+
+.logobar {
+  grid-area: logobar;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 10px 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight:800;
+  color: rgb(33, 3, 109);
+}
+
+.header {
+    grid-area: header;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#videoBG {
+  position: absolute;
+  top: 70px;
+  z-index: -1;
+  height: auto;
+  width: auto;
+}
+
+.tekst1 {
+  grid-area: tekst1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.quote1 {
+  grid-area: quote1;
+}
+
+.quote1, .quote2 {
+  grid-area: quote1;
+  font-family: 'Spectral', serif;
+  font-size: 26px;
+  color: rgb(181, 0, 108);
+  font-style: italic;
+  text-align: center;
+  }
+  .quote1::before, .quote2::before {
+    content: "";
+    display: block;
+    border: 1px solid rgb(181, 0, 108);
+    width: 30%;
+    margin: 0 auto;
+  }
+  .quote1::after, .quote2::after {
+    content: "";
+    display: block;
+    border: 1px solid rgb(181, 0, 108);
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .tekst2 {
+    grid-area: tekst2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .quote2 {
+    grid-area: quote2;
+    padding: 0px 40px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+
+.tekst3 {
+  grid-area: tekst3;
+  margin-top: 40px;
+}
+
+.tekst4 {
+  grid-area: tekst4;
+}
+
+.film1 {
+  grid-area: film1;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.film1 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.film2 {
+  grid-area: film2;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.film2 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.film3 {
+  grid-area: film3;
+  margin-right: 50px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.film3 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.contact {
+  grid-area: contact;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding: 0px 30px 0px 30px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+a {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  background-color: rgb(33, 3, 109);
+  color: #fff;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border-style: none;
+  box-shadow: 3px 3px 19px 0px rgba(0,0,0,0.63);
+}
+
+a:hover {
+  background-color: #fff;
+  color: rgb(33, 3, 109);
+  border: 2px solid rgb(33, 3, 109);
+  box-shadow: none;
+}
+
+
+.footer {
+  grid-area: footer;
+  color: white;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+}
+
+@media (min-width:720px) {
+  .site {
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "logobar logobar"
+    "header header"
+    "tekst1 tekst1"
+    "quote1 quote1"
+    "tekst2 tekst2"
+    "quote2 quote2"
+    "tekst4 film1"
+    "film2 film3"
+    "tekst3 tekst3"
+    "contact contact"
+    "footer footer";
+  }
+}
+
+@media (min-width:1080px) {
+  .site {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "logobar logobar logobar"
+    "header header header"
+    "tekst1 tekst1 tekst1"
+    "quote1 quote1 quote1"
+    "tekst2 tekst2 tekst2"
+    "quote2 quote2 quote2"
+    "tekst4 tekst4 tekst4"
+    "film1 film2 film3"
+    "tekst3 tekst3 tekst3"
+    "contact contact contact"
+    "footer footer footer";
+  }
+  
+  .tekst1{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .tekst2{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .tekst3{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .tekst4{
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .quote1{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .quote2{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
