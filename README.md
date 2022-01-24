@@ -1,8 +1,8 @@
 ## Website Animatiedokter
-
+![](screenshot-animatiedokter.png)
 
 ## Goal
-Simple one-pager for Animatiedokter. A real-life project to simplify complicated medical problems by visualizing them through animation.
+Simple static reponsive one-pager for Animatiedokter. A real-life project to explain complicated medical problems by visualizing them through animation.
 
 ## Link
 www.animatiedokter.nl
